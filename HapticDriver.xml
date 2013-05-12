@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HapticDriver</name>
+    </assembly>
+    <members>
+        <member name="M:HapticDriver.HapticBelt.#ctor">
+            <summary>
+            Constructor to set the properties of our Driver Class
+            </summary>
+        </member>
+        <member name="M:HapticDriver.SerialPortManager.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String[])">
+            <summary>
+            Constructor to set the properties of our Manager Class
+            </summary>
+            <param name="baud">Desired BaudRate</param>
+            <param name="par">Desired Parity</param>
+            <param name="sBits">Desired StopBits</param>
+            <param name="dBits">Desired DataBits</param>
+            <param name="name">Desired PortName</param>
+        </member>
+        <member name="M:HapticDriver.SerialPortManager.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor without string buffer specified
+            </summary>
+        </member>
+        <member name="M:HapticDriver.SerialPortManager.#ctor">
+            <summary>
+            Comstructor to set the properties of our
+            serial port communicator to nothing
+            </summary>
+        </member>
+        <member name="M:HapticDriver.SerialPortManager.HexToByte(System.String)">
+            <summary>
+            method to convert hex string into a byte array
+            </summary>
+            <param name="msg">string to convert</param>
+            <returns>a byte array</returns>
+        </member>
+        <member name="M:HapticDriver.SerialPortManager.ByteToHex(System.Byte[])">
+            <summary>
+            method to convert a byte array into a hex string
+            </summary>
+            <param name="comByte">byte array to convert</param>
+            <returns>a hex string</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:HapticDriver.SerialPortManager.ReturnData(HapticDriver.SerialPortManager.MessageType,System.String)" -->
+        <member name="M:HapticDriver.SerialPortManager.comPort_DataReceived(System.Object,System.IO.Ports.SerialDataReceivedEventArgs)">
+            <summary>
+            method that will be called when theres data waiting in the buffer
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.BaudRate">
+            <summary>
+            Property to hold the BaudRate
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.Parity">
+            <summary>
+            property to hold the Parity
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.StopBits">
+            <summary>
+            property to hold the StopBits
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.DataBits">
+            <summary>
+            property to hold the DataBits
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.PortName">
+            <summary>
+            property to hold the PortName
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.getPortNames">
+            <summary>
+            property to hold the PortName
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.ReadTimeout">
+            <summary>
+            property to hold the PortName
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.CurrentTransmissionType">
+            <summary>
+            property to hold our TransmissionType
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.EchoBack">
+            <summary>
+            property to hold our Terminal Settings Echo Back
+            of our manager class
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.MsgInBuffer">
+            <summary>
+            property to hold our string buffer
+            value
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.MsgInBufferType">
+            <summary>
+            property to hold the type of string passed
+            value
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.StatusBuffer">
+            <summary>
+            property to hold our string buffer
+            value
+            </summary>
+        </member>
+        <member name="P:HapticDriver.SerialPortManager.StatusBufferType">
+            <summary>
+            property to hold the type of string passed
+            value
+            </summary>
+        </member>
+        <member name="T:HapticDriver.SerialPortManager.TransmissionType">
+            <summary>
+            enumeration to hold our transmission types
+            </summary>
+        </member>
+        <member name="T:HapticDriver.SerialPortManager.MessageType">
+            <summary>
+            enumeration to hold our message types
+            </summary>
+        </member>
+    </members>
+</doc>
